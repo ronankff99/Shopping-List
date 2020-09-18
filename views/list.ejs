@@ -1,0 +1,21 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link href="/assets/styles.css" rel="stylesheet", type="text/css">
+    <script src="/assets/list.js"></script>
+  </head>
+  <body>
+    <div id="list-table">
+      <form>
+        <input type="text" name="item" placeholder="Add new item..." required />
+        <button type ="submit">Add Item</button>
+      </form>
+      <ul>
+        <% for(var i = 0; i < items.length; i++){ %>
+          <li><%= items[i].item %></li>
+        <% } %>
+      </ul>
+    </div>
+  </body>
+</html>
