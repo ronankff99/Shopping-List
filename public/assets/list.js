@@ -11,7 +11,7 @@ $(document).ready(function(){
         type: 'POST',
         url: '/list',
         data: list,
-        success: function(data){
+        success: function(){
           location.reload();
         }
       });
@@ -25,7 +25,7 @@ $(document).ready(function(){
       $.ajax({
         type: 'DELETE',
         url: '/list/' + item,
-        success: function(data){
+        success: function(){
           location.reload();
         }
       });
