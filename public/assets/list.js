@@ -1,3 +1,5 @@
+//Commands from tutorial by iamshaunjp
+//https://github.com/iamshaunjp
 $(document).ready(function(){
 
   $('form').on('submit', function(){
